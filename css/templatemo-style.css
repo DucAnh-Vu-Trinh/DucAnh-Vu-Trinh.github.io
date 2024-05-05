@@ -581,7 +581,7 @@ a:hover, a:active, a:focus {
   color: #ffffff;
 }
 
-#contact .fa {
+#contact .fa, #contact .fas {
   padding-right: 10px;
 }
 
@@ -729,4 +729,10 @@ ul {
 
 ul li {
   margin-bottom: 6px; /* Adjust as needed */
+}
+
+.image-container {
+  width: 500px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  overflow: hidden;
 }
