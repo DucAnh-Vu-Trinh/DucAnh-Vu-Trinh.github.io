@@ -428,7 +428,7 @@ a:hover, a:active, a:focus {
   padding: 52px 22px 52px 22px;
 }
 
-#service .service-thumb .fa {
+#service .service-thumb .fa, #service .service-thumb .fas {
   font-size: 42px;
   padding-bottom: 22px;
 }
@@ -447,7 +447,7 @@ a:hover, a:active, a:focus {
   margin-bottom: 0px;
 }
 
-#experience .media .fa, .media .fas{
+#experience .media .fa, #experience .media .fas{
   font-size: 42px;
   margin-right: 14px;
 }
@@ -473,7 +473,7 @@ a:hover, a:active, a:focus {
   margin-bottom: 0px;
 }
 
-#education .media .fa {
+#education .media .fa, #education .media .fas {
   font-size: 42px;
   margin-right: 14px;
 }
@@ -729,10 +729,15 @@ ul {
 
 ul li {
   margin-bottom: 6px; /* Adjust as needed */
+  color: #F8F9FA;
+}
+
+li strong {
+  color: #333333;
 }
 
 .image-container {
   width: 500px; /* Adjust as needed */
-  height: 300px; /* Adjust as needed */
+  height: 700px; /* Adjust as needed */
   overflow: hidden;
 }
