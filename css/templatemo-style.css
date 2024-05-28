@@ -125,7 +125,8 @@ p {
 #experience .container,
 #service .container,
 #education .container,
-#contact .container {
+#contact .container,
+#pcb .container {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -145,6 +146,10 @@ footer {
 #experience,
 #education {
   background: #E9724C;
+}
+
+#pcb .pcb-thumb  {
+  padding: 22px 42px 42px 42px;
 }
 
 .background-image {

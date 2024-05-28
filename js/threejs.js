@@ -2,6 +2,14 @@ import * as THREE from 'three';
 import { VRMLLoader } from 'three/examples/jsm/loaders/VRMLLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
+import colors from './colors.js';
+
+const threeColors = {};
+
+for (let className in colors) {
+  threeColors[className] = new THREE.Color(colors[className]);
+}
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
@@ -27,9 +35,15 @@ controls.enableRotate = true;
 controls.rotateSpeed = 0.6;
 
 // Create a directional light and add it to the scene
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(0, 0, 18); // set the position of the light
-scene.add(directionalLight);
+const directionalLightTop = new THREE.DirectionalLight(0xffffff, 1);
+const directionalLightBot = new THREE.DirectionalLight(0xffffff, 1);
+
+directionalLightTop.position.set(0, 0, 18); // set the position of the light
+directionalLightBot.position.set(0, 0, -18); // set the position of the light
+
+scene.add(directionalLightTop);
+scene.add(directionalLightBot);
+scene.background = new THREE.Color(threeColors['bg-dark']); // set the background color of the scene 
 
 // Create a VRMLLoader instance
 const loader = new VRMLLoader();
@@ -74,7 +88,9 @@ loader.load(
   }
 );
 
-camera.position.z = 55;
+window.addEventListener('resize', function() {
+  camera.position.z = window.innerWidth * 0.0302;
+});
 camera.lookAt(scene.position);
 
 function animate() {
