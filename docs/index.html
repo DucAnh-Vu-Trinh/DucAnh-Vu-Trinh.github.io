@@ -14,16 +14,16 @@
 Stimulus Template
 http://www.templatemo.com/tm-498-stimulus
 -->
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-CUNCADv3.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-DKC_z6LD.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16-3jxhGyBV.png">
-<link rel="manifest" href="/assets/site-BwHFeIBa.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
 	
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
-  <script type="module" crossorigin src="/assets/index-BzhhtCUO.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-LBrAWYdY.css">
+  <script type="module" crossorigin src="/assets/index-DQlShrNa.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-6uZsHm0R.css">
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -56,8 +56,9 @@ http://www.templatemo.com/tm-498-stimulus
                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home" class="smoothScroll">Home</a></li>
                     <li><a href="#about" class="smoothScroll">About Me</a></li>
-                    <li><a href="#experience" class="smoothScroll">Experiences</a></li>
+                    <li><a href="#experience-heading" class="smoothScroll">Experiences</a></li>
                     <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    <li><a href="#pcb" class="smoothScroll">PCB Design</a></li>
                </ul>
           </div>
 
@@ -205,7 +206,7 @@ http://www.templatemo.com/tm-498-stimulus
      <div class="overlay"></div>
      <div class="container">
           <div class="row">
-               <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+               <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
                     <h1>My Experiences</h1>
                     <p class="color-white">Previous project and my tasks</p>
                </div>
@@ -218,7 +219,7 @@ http://www.templatemo.com/tm-498-stimulus
           <div class="row">
                <div class="col-12">
                     <div class="color-white experience-thumb">
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                         <div class="wow fadeInUp color-white media" data-wow-delay="0.8">
                               <div class="media-object media-left">
                                    <i class="fas fa-broadcast-tower"></i>
                               </div>
@@ -237,7 +238,7 @@ http://www.templatemo.com/tm-498-stimulus
                               </div>
                          </div>
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
                               <div class="media-object media-left">
                                    <i class="fas fa-cogs"></i>
                               </div>
@@ -274,7 +275,7 @@ http://www.templatemo.com/tm-498-stimulus
                               </div>
                          </div>
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                         <div class="wow fadeInUp color-white media" data-wow-delay="2.0s">
                               <div class="media-object media-left">
                                    <i class="fas fa-signal"></i>
                               </div>
@@ -285,7 +286,7 @@ http://www.templatemo.com/tm-498-stimulus
                               </div>
                          </div>
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                         <div class="wow fadeInUp color-white media" data-wow-delay="2.2s">
                               <div class="media-object media-left">
                                    <i class="fa fa-laptop"></i>
                               </div>
@@ -296,7 +297,7 @@ http://www.templatemo.com/tm-498-stimulus
                               </div>
                          </div>
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                         <div class="wow fadeInUp color-white media" data-wow-delay="2.4s">
                               <div class="media-object media-left">
                                    <i class="fas fa-robot"></i>
                               </div>
@@ -448,8 +449,24 @@ http://www.templatemo.com/tm-498-stimulus
 	</div>
 </footer>
 
-<section>
-     <div id="threejs-scene" class="col-md-3 col-sm-6"></div>
+<!-- PCB Design Section -->
+
+<section id="pcb" class="parallax-section">
+     <div class="container">
+          <div class = "row">
+
+               <div class="color-white col-12">
+                    <div class="bg-dark">
+                         <div class="pcb-thumb wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My PCB</h1>
+                         </div>
+                    </div>
+               </div>
+               
+          </div>
+          
+          <div id="threejs-scene"></div>
+     </div>
 </section>
 
 <!-- SCRIPTS -->
