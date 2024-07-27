@@ -485,6 +485,25 @@ a:hover, a:active, a:focus {
   font-weight: bold;
 }
 
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible h2:hover {
+  font-weight: bold;
+  background: #E3AE57;
+  /*border-bottom: 2px solid #ddd; /* Underline border */
+  border-color: #232B2B;
+  color: #232B2B;
+}
+
+.collapsible h2 {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center vertically */
+  cursor: pointer; /* Ensures pointer cursor for better UX */
+}
 /*---------------------------------------
     Education section              
 -----------------------------------------*/
