@@ -504,6 +504,11 @@ a:hover, a:active, a:focus {
   align-items: center; /* Center vertically */
   cursor: pointer; /* Ensures pointer cursor for better UX */
 }
+
+.column  {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
 /*---------------------------------------
     Education section              
 -----------------------------------------*/
