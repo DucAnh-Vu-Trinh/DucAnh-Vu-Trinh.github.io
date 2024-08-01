@@ -19,11 +19,16 @@ http://www.templatemo.com/tm-498-stimulus
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 <link rel="manifest" href="images/favicon/site.webmanifest">
 	
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="fontawesome/v6/css/fontawesome.min.css">
+<link rel="stylesheet" href="fontawesome/v6/css/solid.min.css">
+<link rel="stylesheet" href="fontawesome/v6/css/brands.min.css">
+<link rel="stylesheet" href="fontawesome/v4/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
-  <script type="module" crossorigin src="/assets/index-ChmSQbP-.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Clfd9TCh.css">
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -58,7 +63,7 @@ http://www.templatemo.com/tm-498-stimulus
                     <li><a href="#about" class="smoothScroll">About Me</a></li>
                     <li><a href="#experience-heading" class="smoothScroll">Experiences</a></li>
                     <li><a href="#contact" class="smoothScroll">Contact</a></li>
-                    <li><a href="#pcb" class="smoothScroll">PCB Design</a></li>
+                    <li><a href="PcbDesign.html" class="smoothScroll">PCB Design</a></li>
                     <li><a href="#resources" class="smoothScroll">Resources</a></li>
                </ul>
           </div>
@@ -89,7 +94,6 @@ http://www.templatemo.com/tm-498-stimulus
                          </div>
                     </div>
                </div>
-
 
           </div>
      </div>
@@ -368,13 +372,22 @@ http://www.templatemo.com/tm-498-stimulus
                          </div>
 
                          <div class="wow fadeInUp color-white media" data-wow-delay="2.4s">
-                              <div class="media-object media-left">
-                                   <i class="fas fa-robot"></i>
-                              </div>
-                              <div class="media-body">
-                                   <h3 class="media-heading">Design a Robotic System for Monitoring and Harvesting Edible Bird's Nest  <small>2023 May - 2023 Sep</small></h3>
-                                   <p class="color-white"></p>
-                                   <a href="https://doi.org/10.3390/agriengineering6010008" target="_blank" class="my-link">View Paper</a>
+                              <div class="collapsible">
+                                   <h2><i class="fas fa-caret-right"></i>Publication:</h2>
+                                   <div class="collapsible-content">
+                                        <div class="column">
+                                             <div>
+                                                  <div class="media-object media-left">
+                                                       <i class="fas fa-robot"></i>
+                                                  </div>
+                                                  <div class="media-body">
+                                                       <h3 class="media-heading">Design a Robotic System for Monitoring and Harvesting Edible Bird's Nest  <small>2023 May - 2023 Sep</small></h3>
+                                                       <p class="color-white"></p>
+                                                       <a href="https://doi.org/10.3390/agriengineering6010008" target="_blank" class="my-link">View Paper</a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
                               </div>
                          </div>
                     </div>
@@ -518,26 +531,6 @@ http://www.templatemo.com/tm-498-stimulus
 		</div>
 	</div>
 </footer>
-
-<!-- PCB Design Section -->
-
-<section id="pcb" class="parallax-section">
-     <div class="container">
-          <div class = "row">
-
-               <div class="color-white col-12">
-                    <div class="bg-dark">
-                         <div class="pcb-thumb wow fadeInUp section-title" data-wow-delay="0.8s">
-                              <h1>My PCB</h1>
-                         </div>
-                    </div>
-               </div>
-               
-          </div>
-          
-          <div id="threejs-scene"></div>
-     </div>
-</section>
 
 <!-- SCRIPTS -->
 
