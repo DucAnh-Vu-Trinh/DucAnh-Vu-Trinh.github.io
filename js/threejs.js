@@ -24,7 +24,9 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 
 // Disable zooming
-controls.enableZoom = false;
+controls.enableZoom = true;
+controls.minDistance = 10; // Set minimum zoom distance
+controls.maxDistance = 500; // Set maximum zoom distance
 
 // Disable panning
 controls.enablePan = false;
@@ -88,9 +90,7 @@ loader.load(
   }
 );
 
-window.addEventListener('resize', function() {
-  camera.position.z = window.innerWidth * 0.0302;
-});
+camera.position.z = 59.8;
 camera.lookAt(scene.position);
 
 function animate() {
